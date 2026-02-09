@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import KeyboardView from './KeyboardView.vue';
 
-const props = defineProps<{
+defineProps<{
   show: boolean;
   selectedDevice: string | null;
   rgbSettings: any;

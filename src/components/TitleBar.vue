@@ -3,7 +3,7 @@ import { useWindow } from '../composables/useWindow';
 
 const { isMaximized, minimizeWindow, toggleMaximize, closeWindow } = useWindow();
 
-const props = defineProps<{
+defineProps<{
   activeTab: 'devices' | 'profiles' | 'settings';
   activeProfileName?: string;
   activeApp?: string;

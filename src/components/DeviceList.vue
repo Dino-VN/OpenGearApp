@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import KeyboardSVG from './KeyboardSVG.vue';
 
-const props = defineProps<{
+defineProps<{
   devices: string[];
   viewMode: 'grid' | 'list';
   isConnected: boolean;
