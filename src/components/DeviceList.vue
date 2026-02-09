@@ -48,10 +48,14 @@ const emit = defineEmits<{
     >
       <div class="card-header">
         <h2 class="device-name">{{ device }}</h2>
-        <div class="battery-icon">
+        <div class="connection-icon" title="Wired Connection">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="1" y="6" width="18" height="12" rx="2"/>
-            <path d="M23 10v4"/>
+            <path d="M10 7.5v-2a2 2 0 0 1 2-2h0a2 2 0 0 1 2 2v2" />
+            <path d="M8.5 7.5h7" />
+            <path d="M12 7.5v6" />
+            <path d="M7 13.5h10v4h-10z" />
+            <path d="M10 17.5v4" />
+            <path d="M14 17.5v4" />
           </svg>
         </div>
       </div>
@@ -106,6 +110,15 @@ const emit = defineEmits<{
 .device-showcase.list .card-header {
   flex-shrink: 0;
   width: 200px;
+}
+
+.device-showcase.list .connection-icon {
+  color: var(--text-muted);
+}
+
+.connection-icon svg {
+  width: 24px;
+  height: 24px;
 }
 
 .device-showcase.list .keyboard-preview {
